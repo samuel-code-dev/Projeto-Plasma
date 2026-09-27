@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root{
+
+    /* ===== FUNDO ===== */
+
+    --bg-main: #F7FBFE;
+    --bg-secondary: #F4F9FD;
+
+    --surface: #FCFDFF;
+    --surface-hover: #F8FCFC;
+
+
+    /* ===== NAVY ===== */
+
+    --navy-950: #041838;
+    --navy-900: #071A38;
+    --navy-800: #0C2246;
+    --navy-700: #0B2F63;
+
+
+    /* ===== AZUL ===== */
+
+    --blue-600: #0E478E;
+    --blue-500: #1076F7;
+    --blue-400: #2E7CBF;
+    --blue-300: #7AAAEC;
+    --blue-200: #9CC2F6;
+    --blue-100: #D5E5FB;
+
+
+    /* ===== TEXTO ===== */
+
+    --text-primary: #0A1E3E;
+    --text-secondary: #576782;
+    --text-muted: #8693A9;
+    --text-disabled: #AFB9CB;
+
+
+    /* ===== STATUS ===== */
+
+    --success: #10D286;
+
+
+    /* ===== BORDAS ===== */
+
+    --border: #E0E8F0;
+    --border-light: #E9EEF5;
+
+
+    /* ===== GRADIENTES ===== */
+
+    --gradient-hero:
+        linear-gradient(
+            110deg,
+            #041838 0%,
+            #071A38 25%,
+            #0B2752 55%,
+            #0E3B76 78%,
+            #041838 100%
+        );
+
+    --gradient-logo:
+        linear-gradient(
+            135deg,
+            #3B70B5 0%,
+            #4A88E8 35%,
+            #5094FC 55%,
+            #9CC2F6 78%,
+            #C8E0FC 100%
+        );
+
+    --gradient-primary:
+        linear-gradient(
+            135deg,
+            #0C74FC;
+            #1076F7;
+        );
+
+    --font-primaria: 'Inter', sans-serif;
+    --font-segundaria: 'DM Sans', sans-serif;
+}
+
+
+
+* {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    background-color: #FCFCFC;
+}
+
+
+
+main > h1{
+    padding: 5px;
+    margin: 5px;
+    text-transform: uppercase;
+    font-size: 23px;
+}
+
+main > .navegacao a {
+    text-decoration: none;
+    color: var(--blue-600);
+    display: flex;
+    gap: 8px;
+    margin: 12px;
+    transition: 0.5s;
+    font-family: var(--font-segundaria);
+}
+
+main > .navegacao i{
+    color: var(--blue-600);
+    
+}
+
+main > .navegacao a:hover{
+    background-color: var(--blue-400);
+    max-width: 150px;
+    padding: 8px;
+    border-radius: 12px;
+    color: var(--blue-100);
+}
+
+main > h3{
+    margin-top: 13px;
+    margin-right: 10px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+}
+
+main > h4{
+    margin-left: 15px;
+    margin: 10px;
+    padding: 3px;
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+main > h4:hover{
+    background-color: rgba(128, 128, 128, 0.322);
+}
+
+.form > input{
+    outline: none;
+    width: 400px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.603);
+    border-radius: 20px;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    font-family: var(--font-segundaria);
+    font-weight: bold;
+}
+
+.form i{
+    position: absolute;
+    right: 32%;
+    bottom: 46%;
+}
+
+.form > h2{
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    font-family: var(--font-primaria);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.present{
+    width: 230px;
+    height: 27px;
+    font-family: var(--font-primaria);
+    padding: 2px;
+    border: 1px solid #081b72;
+    border-radius: 50vw;
+    position: absolute;
+    top: 1%;
+    left: 60%;
+    bottom: 95%;
+    cursor: pointer;
+}
+
+.present i{
+    margin-top: 4px;
+    position: absolute;
+    left: 3%;
+    top: 9%;
+    color: var(--plasma-secondary);
+}
+
+.present h4{
+    margin-left: 30px;
+    margin-top: 4px;
+}
+
+.plasma-brand{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    max-width: 250px;
+    padding: 10px;
+    margin-top: 5pc;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.plasma-brand img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+}
+
+.plasma-brand h2{
+    margin: 0;
+    font-size: 15px;
+}
+
+.plasma-brand span, .plasma-brand p{
+    margin: 0;
+    font-size: 13px;
+}
+
+.plasma-brand p{
+    color: rgb(58, 160, 83);
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    max-width: 250px;
+    padding: 5px;
+    margin-top: 3pc;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.profile img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+}
+
+.profile h2{
+    margin: 0;
+    font-size: 15px;
+    position: absolute;
+    right: 85%;
+    bottom: 16%;
+}
+
+.profile span{
+    font-size: 15px;
+    margin: 15px;
+    margin-bottom: 10px;
+}
