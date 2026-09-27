@@ -237,7 +237,7 @@ main > h4:hover{
 }
 
 .plasma-brand p{
-    color: rgb(58, 160, 83);
+    color: var(--success);
     font-size: 15px;
     margin-top: 5px;
 }
