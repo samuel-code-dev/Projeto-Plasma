@@ -5,81 +5,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 :root{
-
-    /* ===== FUNDO ===== */
-
     --bg-main: #F7FBFE;
     --bg-secondary: #F4F9FD;
-
     --surface: #FCFDFF;
     --surface-hover: #F8FCFC;
-
-
-    /* ===== NAVY ===== */
-
-    --navy-950: #041838;
-    --navy-900: #071A38;
-    --navy-800: #0C2246;
-    --navy-700: #0B2F63;
-
-
-    /* ===== AZUL ===== */
-
     --blue-600: #0E478E;
     --blue-500: #1076F7;
-    --blue-400: #2E7CBF;
-    --blue-300: #7AAAEC;
-    --blue-200: #9CC2F6;
-    --blue-100: #D5E5FB;
-
-
-    /* ===== TEXTO ===== */
-
+    --blue-400: #2E7CBF
     --text-primary: #0A1E3E;
     --text-secondary: #576782;
     --text-muted: #8693A9;
     --text-disabled: #AFB9CB;
-
-
-    /* ===== STATUS ===== */
-
     --success: #10D286;
-
-
-    /* ===== BORDAS ===== */
-
     --border: #E0E8F0;
     --border-light: #E9EEF5;
-
-
-    /* ===== GRADIENTES ===== */
-
-    --gradient-hero:
-        linear-gradient(
-            110deg,
-            #041838 0%,
-            #071A38 25%,
-            #0B2752 55%,
-            #0E3B76 78%,
-            #041838 100%
-        );
-
-    --gradient-logo:
-        linear-gradient(
-            135deg,
-            #3B70B5 0%,
-            #4A88E8 35%,
-            #5094FC 55%,
-            #9CC2F6 78%,
-            #C8E0FC 100%
-        );
-
-    --gradient-primary:
-        linear-gradient(
-            135deg,
-            #0C74FC;
-            #1076F7;
-        );
 
     --font-primaria: 'Inter', sans-serif;
     --font-segundaria: 'DM Sans', sans-serif;
@@ -99,7 +38,7 @@ body, html {
 
 main{
     background-color: var(--bg-main);
-    border: 1px solid var(--border-light);
+    border: 1px solid var(--border);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 12px;
     width: 100%;
@@ -258,7 +197,7 @@ main > h4:hover{
 }
 
 .profile:hover{
-    transform: scale(1.1);
+    transform: translate(20px);
 }
 
 .content{
@@ -267,9 +206,9 @@ main > h4:hover{
 
 .content h2{
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
-    font-size: 28px;
+    font-size: 38px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -280,9 +219,15 @@ main > h4:hover{
     outline: none;
     width: 100%;
     max-width: 380px;
-    height: 35px;
+    height: 50px;
     border: 1px solid rgba(0, 0, 0, 0.26);
     border-radius: 20px;
     font-family: var(--font-segundaria);
     font-weight: bold;
+}
+
+.content p{
+    position: absolute;
+    top: 40%;
+    left: 50%;
 }
